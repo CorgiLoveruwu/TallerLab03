@@ -1,10 +1,12 @@
 public class Empresa {
     String nombre;
     String direccion;
+    Sucursal sucursal;
 
-    public Empresa(String nombre, String direccion) {
+    public Empresa(String nombre, String direccion, Sucursal s) {
         this.nombre = nombre;
         this.direccion = direccion;
+        this.sucursal = s;
     }
 
     public String getNombre() {

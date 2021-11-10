@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="Creación de Clases">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Producto.java" afterDir="false" />
+    <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CodigoDeProducto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmpresaTransportista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Flete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sucursal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20i6ssmrryhj7X3K63TJbxk1SbF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
@@ -21,10 +22,14 @@ public class Menu {
     public static void switchesMenu() {
         int x = -1;
         do {
+            ArrayList<Camion> c = new ArrayList<>();
+            añadirCamiones(c);
+            Empresa empresa = new Empresa("disney","orlando 133",new Sucursal("456875", "metropolitana",c));
             switch (validarMenu (5)) {
                 case 1:
                     break;
                 case 2:
+                    cambiarEstado(empresa);
                     break;
                 case 3:
                     break;
@@ -40,6 +45,35 @@ public class Menu {
                 mostrarMenu();
             }
         } while (x == 1);
+    }
+
+    private static void cambiarEstado(Empresa empresa) {
+        mostrarCamiones(empresa);
+        int opcion = validarMenu(empresa.sucursal.camiones.size());
+        if(empresa.sucursal.camiones.get(opcion).isEnServicio()){
+            empresa.sucursal.camiones.get(opcion).setEnServicio(false);
+        }else {
+            empresa.sucursal.camiones.get(opcion).setEnServicio(true);
+        }
+    }
+
+    private static void mostrarCamiones(Empresa empresa) {
+        System.out.println("Que camion desea cambiar de estado?");
+        System.out.println(empresa.sucursal.camiones.toString());
+    }
+
+    private static void añadirCamiones(ArrayList<Camion> c) {
+        ArrayList<Pack> p = new ArrayList<>();
+        p.add(new Pack(Pack.generarPack()));
+        Flete flete = new Flete("78954","cosas",p);
+        ArrayList<Flete> f = new ArrayList<>();
+        f.add(flete);
+        Camion c1 = new Camion("123","DSF564","transporta lechugas",true,f );
+        Camion c2 = new Camion("143","DPF564","transporta pepinos",false, f);
+        Camion c3 = new Camion("129","OSF564","transporta papas",true, f);
+        c.add(c1);
+        c.add(c2);
+        c.add(c3);
     }
 
     private static void finalizarPrograma() {

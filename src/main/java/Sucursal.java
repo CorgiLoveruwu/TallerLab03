@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+
 public class Sucursal {
     String codigo;
     String region;
+    ArrayList<Camion> camiones;
 
-    public Sucursal(String codigo, String region) {
+    public Sucursal(String codigo, String region, ArrayList<Camion> c) {
         this.codigo = codigo;
         this.region = region;
+        this.camiones = c;
     }
 
     public String getCodigo() {

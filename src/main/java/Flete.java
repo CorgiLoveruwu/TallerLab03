@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+
 public class Flete {
     String codigo;
     String descripcion;
+    ArrayList<Pack> pack;
 
-    public Flete(String codigo, String descripcion) {
+    public Flete(String codigo, String descripcion, ArrayList<Pack> pack) {
         this.codigo = codigo;
         this.descripcion = descripcion;
+        this.pack = pack;
     }
 
     public String getCodigo() {

@@ -1,14 +1,18 @@
+import java.util.ArrayList;
+
 public class Camion {
     String codigo;
     String patente;
     String descripcion;
     boolean enServicio;
+    ArrayList<Flete> fletes;
 
-    public Camion(String codigo, String patente, String descripcion, boolean enServicio) {
+    public Camion(String codigo, String patente, String descripcion, boolean enServicio, ArrayList<Flete> fletes) {
         this.codigo = codigo;
         this.patente = patente;
         this.descripcion = descripcion;
         this.enServicio = enServicio;
+        this.fletes = fletes;
     }
 
     public String getCodigo() {
