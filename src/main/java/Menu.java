@@ -23,7 +23,7 @@ public class Menu {
         int x = -1;
         do {
             ArrayList<Camion> c = new ArrayList<>();
-            añadirCamiones(c);
+            añadirCamionesDefault (c);
             Empresa empresa = new Empresa("disney","orlando 133",new Sucursal("456875", "metropolitana",c));
             switch (validarMenu (5)) {
                 case 1:
@@ -32,8 +32,10 @@ public class Menu {
                     cambiarEstado(empresa);
                     break;
                 case 3:
+                    añadirCamiones();
                     break;
                 case 4:
+                    
                     break;
                 case 5:
                     finalizarPrograma();
@@ -45,6 +47,31 @@ public class Menu {
                 mostrarMenu();
             }
         } while (x == 1);
+    }
+
+    private static void añadirCamiones() {
+        Scanner teclado = new Scanner (System.in);
+        String codigoNuevo;
+        String patenteNueva;
+        String descripcionNueva;
+        int opcion;
+
+
+        System.out.println ("Ingrese los datos del Camión.");
+        System.out.println ("Codigo: ");
+        codigoNuevo = teclado.next ();
+        System.out.println ("Patente: ");
+        patenteNueva = teclado.next ();
+        System.out.println ("Descripcion: ");
+        descripcionNueva = teclado.next();
+        System.out.println ("Estado: ");
+        System.out.println ("Selecciona [1] En servicio [2] Fuera de servicio ");
+        opcion = teclado.nextInt();
+
+
+
+
+
     }
 
     private static void cambiarEstado(Empresa empresa) {
@@ -62,7 +89,7 @@ public class Menu {
         System.out.println(empresa.sucursal.camiones.toString());
     }
 
-    private static void añadirCamiones(ArrayList<Camion> c) {
+    private static void añadirCamionesDefault(ArrayList<Camion> c) {
         ArrayList<Pack> p = new ArrayList<>();
         p.add(new Pack(Pack.generarPack()));
         Flete flete = new Flete("78954","cosas",p);
