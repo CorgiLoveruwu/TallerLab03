@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90642dbb-d60f-4d0f-b6c8-7a6d2d8b6de1" name="Changes" comment="Commit de prueba" />
+    <list default="true" id="90642dbb-d60f-4d0f-b6c8-7a6d2d8b6de1" name="Changes" comment="Commit de prueba">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Camion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodigoDeProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EmpresaTransportista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Flete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sucursal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -30,6 +44,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -56,6 +73,7 @@
       <updated>1636515270509</updated>
       <workItem from="1636515271976" duration="113000" />
       <workItem from="1636515407778" duration="159000" />
+      <workItem from="1636543883655" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="q">
       <created>1636515504573</created>
@@ -71,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636515525154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit de prueba">
+      <created>1636543923230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636543923230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
