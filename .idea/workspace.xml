@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="Cuarto commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
     </list>
+    <list default="true" id="ae89f2a5-5a8a-4930-aec3-e574a0ce97e3" name="Changes" comment="a" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,13 +32,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="ProjectId" id="20i6ssmrryhj7X3K63TJbxk1SbF" />
+
+  <component name="ProjectId" id="20i5sXGp5xBjDYvhe5zWACbvifT" />
+
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -74,10 +82,29 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\IdeaProjects\TallerLab03" />
+    </key>
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+
       <changelist id="90642dbb-d60f-4d0f-b6c8-7a6d2d8b6de1" name="Changes" comment="" />
       <created>1636515270509</created>
       <option name="number" value="Default" />
@@ -123,6 +150,23 @@
       <updated>1636551052301</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+
+      <changelist id="ae89f2a5-5a8a-4930-aec3-e574a0ce97e3" name="Changes" comment="" />
+      <created>1636514780536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636514780536</updated>
+      <workItem from="1636514785314" duration="418000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1636515162149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636515162149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +182,7 @@
         </entry>
       </map>
     </option>
+
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,5 +191,12 @@
     <MESSAGE value="Tercer commit" />
     <MESSAGE value="Cuarto commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Cuarto commit" />
+
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+
   </component>
 </project>
