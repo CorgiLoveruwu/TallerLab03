@@ -26,4 +26,13 @@ public class Sucursal {
     public void setRegion(String region) {
         this.region = region;
     }
+
+    @Override
+    public String toString() {
+        return "Sucursal{" +
+                "codigo='" + codigo + '\'' +
+                ", region='" + region + '\'' +
+                ", camiones=" + camiones +
+                '}';
+    }
 }

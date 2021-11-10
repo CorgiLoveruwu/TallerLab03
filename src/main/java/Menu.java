@@ -20,7 +20,6 @@ public class Menu {
     }
     //Switches del menú principal.
     public static void switchesMenu() {
-        int x = -1;
         ArrayList<Camion> c = new ArrayList<>();
         añadirCamionesDefecto(c);
         Empresa empresa = new Empresa("disney","orlando 133",new Sucursal("456875", "metropolitana",c));
@@ -28,26 +27,40 @@ public class Menu {
         do {
             opcionSwitch = validarMenu(5);
             switch (opcionSwitch) {
-                case 1:
+                case 1 -> {
                     cambiarProductos(empresa);
                     mostrarMenu();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     cambiarEstado(empresa);
                     mostrarMenu();
-                    break;
-                case 3:
-                    break;
-                case 4:
+                }
+                case 3 -> añadirCamion(empresa);
+                case 4 -> {
                     desvincularCamiones(empresa);
                     mostrarMenu();
-                    break;
-                case 5:
-                    finalizarPrograma();
-                    break;
+                }
+                case 5 -> finalizarPrograma();
             }
-
         } while (opcionSwitch<5);
+    }
+
+    private static void añadirCamion(Empresa empresa) {
+        Scanner teclado = new Scanner(System.in);
+        boolean serv = false;
+        System.out.println("ingrese datos del nuevo camion");
+        System.out.println("codigo:");
+        String codigo = teclado.next();
+        System.out.println("patente:");
+        String patente = teclado.next();
+        System.out.println("descripcion:");
+        String descripcion = teclado.next();
+        System.out.println("esta en servicio? [1]Si [2]No");
+        int servicio = validarMenu(2);
+        if (servicio==1){
+            serv=true;
+        }
+        empresa.sucursal.camiones.add(new Camion(codigo,patente,descripcion,serv));
     }
 
     private static void desvincularCamiones(Empresa empresa) {
@@ -57,39 +70,44 @@ public class Menu {
     }
 
     private static void cambiarProductos(Empresa empresa) {
-        Scanner teclado = new Scanner(System.in);
         System.out.println("desea añadir o quitar productos?");
         System.out.println("[1]Añadir [2]Quitar");
         int opcion = validarMenu(2);
         System.out.println("de que camion desea hacer el cambio?");
+        System.out.println(empresa.sucursal.camiones.toString());
         int opcioncamion = validarMenu(empresa.sucursal.camiones.size())-1;
         if (opcion==1){
-            System.out.println("ingrese datos de producto a añadir");
-            System.out.println("codigo:");
-            String codigo = teclado.next();
-            System.out.println("tipo:");
-            String tipo = teclado.next();
-            if ( empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.size()>=20){
-                System.out.println("no se pueden agregar mas productos");
-            }else {
-                empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.add(new Producto(codigo,tipo));//vamos a asumir que no hay mas lista de fletes ni packs
-            }
+            addProductos(empresa,opcioncamion);
         }else {
-            System.out.println(empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.toString());
-            System.out.println("que producto desea eliminar?");
-            int remover = validarMenu(empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.size())-1;
-            empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.remove(validarMenu(remover));
+            deleteProductos(empresa,opcioncamion);
+        }
+    }
+
+    private static void deleteProductos(Empresa empresa, int opcioncamion) {
+        System.out.println(empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.toString());
+        System.out.println("que producto desea eliminar?");
+        int remover = validarMenu(empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.size())-1;
+        empresa.sucursal.camiones.get(opcioncamion).fletes.get(0).pack.get(0).productos.remove(validarMenu(remover));
+    }
+
+    private static void addProductos(Empresa empresa, int camion) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("ingrese datos de producto a añadir");
+        System.out.println("codigo:");
+        String codigo = teclado.next();
+        System.out.println("tipo:");
+        String tipo = teclado.next();
+        if ( empresa.sucursal.camiones.get(camion).fletes.get(0).pack.get(0).productos.size()>=20){
+            System.out.println("no se pueden agregar mas productos");
+        }else {
+            empresa.sucursal.camiones.get(camion).fletes.get(0).pack.get(0).productos.add(new Producto(codigo,tipo));//vamos a asumir que no hay mas lista de fletes ni packs
         }
     }
 
     private static void cambiarEstado(Empresa empresa) {
         mostrarCamiones(empresa);
         int opcion = validarMenu(empresa.sucursal.camiones.size())-1;
-        if(empresa.sucursal.camiones.get(opcion).isEnServicio()){
-            empresa.sucursal.camiones.get(opcion).setEnServicio(false);
-        }else {
-            empresa.sucursal.camiones.get(opcion).setEnServicio(true);
-        }
+        empresa.sucursal.camiones.get(opcion).setEnServicio(!empresa.sucursal.camiones.get(opcion).isEnServicio());
     }
 
     private static void mostrarCamiones(Empresa empresa) {

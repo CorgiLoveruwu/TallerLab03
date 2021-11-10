@@ -15,6 +15,13 @@ public class Camion {
         this.fletes = fletes;
     }
 
+    public Camion(String codigo, String patente, String descripcion, boolean enServicio) {
+        this.codigo = codigo;
+        this.patente = patente;
+        this.descripcion = descripcion;
+        this.enServicio = enServicio;
+    }
+
     public String getCodigo() {
         return codigo;
     }
