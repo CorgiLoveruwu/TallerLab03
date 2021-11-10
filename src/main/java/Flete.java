@@ -29,9 +29,6 @@ public class Flete {
 
     @Override
     public String toString() {
-        return "Flete{" +
-                "codigo='" + codigo + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+        return "Flete{" + "," + codigo + "," + descripcion +'}';
     }
 }

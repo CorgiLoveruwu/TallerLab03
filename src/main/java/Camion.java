@@ -49,11 +49,6 @@ public class Camion {
 
     @Override
     public String toString() {
-        return "Camion{" +
-                "codigo='" + codigo + '\'' +
-                ", patente='" + patente + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", enServicio=" + enServicio +
-                '}';
+        return "Camion{" + "," + codigo + "," + patente + "," + descripcion + "," + enServicio + '}';
     }
 }

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="Tercer commit">
+    <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="Commit 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
