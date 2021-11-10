@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
 
+    <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="." />
+
+
     <list default="true" id="639588a2-566e-4db6-8c4e-25bbdad48024" name="Changes" comment="Cuarto commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camion.java" afterDir="false" />
@@ -142,6 +145,16 @@
       <option name="project" value="LOCAL" />
       <updated>1636549261392</updated>
     </task>
+
+    <task id="LOCAL-00005" summary=".">
+      <created>1636551904564</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636551904564</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+
     <task id="LOCAL-00005" summary="Cuarto commit">
       <created>1636551052301</created>
       <option name="number" value="00005" />
@@ -167,6 +180,7 @@
     </task>
     <option name="localTasksCounter" value="2" />
 
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +203,10 @@
     <MESSAGE value="q" />
     <MESSAGE value="Commit de prueba" />
     <MESSAGE value="Tercer commit" />
+
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+
     <MESSAGE value="Cuarto commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Cuarto commit" />
 
@@ -197,6 +215,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="a" />
     <option name="LAST_COMMIT_MESSAGE" value="a" />
+
 
   </component>
 </project>
